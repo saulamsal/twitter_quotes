@@ -10,5 +10,6 @@ npm-debug.*
 web-build/
 node_modules
 .git
+.env
 # macOS
 .DS_Store

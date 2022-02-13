@@ -1,4 +1,5 @@
 const http = require("https");
+const MongoClient = require('mongodb').MongoClient;
 
 function getQuote() {
     return new Promise((resolve, reject) => {
@@ -15,11 +16,9 @@ function getQuote() {
     });
 }
 
-//get quote and console log it
 getQuote().then((quotes) => {
      quotes = JSON.parse(quotes);
     console.log(quotes[0]);
-    
 }
 );
 
